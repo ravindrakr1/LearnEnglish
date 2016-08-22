@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LearnEnglish</string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="app_id">301690950176955</string>
+    <string name="signup_button">SIGN UP</string>
+    <string name="login_button">LogIn</string>
+    <string name="login_password">enter your PassWord</string>
+    <string name="action_settings">LogOut</string>
+    <string name="login_email">enter your email</string>
+    <string name="signup_name">Name:</string>
+    <string name="signup_email">Email:</string>
+    <string name="signup_password">Password:</string>
+</resources>
