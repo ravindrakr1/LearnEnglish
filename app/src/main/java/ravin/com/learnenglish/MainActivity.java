@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onCancel() {
+
             }
 
             @Override
@@ -164,4 +165,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // onClickForgotPassword method end
+
+    public void onClickSkip(View view){
+
+        Intent intent1 = new Intent(MainActivity.this,MainPageActivity.class);
+        startActivity(intent1);
+    }
 }

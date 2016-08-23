@@ -81,6 +81,17 @@
         android:layout_below="@+id/button1"
         android:layout_marginTop="60dp"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:id="@+id/button_skip"
+        android:layout_below="@+id/login_button"
+        android:layout_alignRight="@+id/forgot_password"
+        android:layout_alignEnd="@+id/forgot_password"
+        android:layout_marginTop="43dp"
+        android:clickable="true"
+        android:onClick="onClickSkip" />
 
 
 </RelativeLayout>

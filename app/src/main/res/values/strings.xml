@@ -11,4 +11,15 @@
     <string name="signup_name">Name:</string>
     <string name="signup_email">Email:</string>
     <string name="signup_password">Password:</string>
+    <string name="title_activity_conversation">ConversationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_quiz">QuizActivity</string>
+    <string name="title_activity_grammar">GrammarActivity</string>
+    <string name="title_activity_dictionary">DictionaryActivity</string>
+    <string name="title_activity_grewords">GREWordsActivity</string>
+    <string name="title_activity_daily_phrases">DailyPhrasesActivity</string>
+    <string name="title_activity_pronunciation">PronunciationActivity</string>
+    <string name="title_activity_discussion_forum">DiscussionForumActivity</string>
 </resources>

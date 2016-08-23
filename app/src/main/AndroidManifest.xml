@@ -40,7 +40,40 @@
             android:exported="true" />
 
         <activity android:name=".SignupActivity" />
-        <activity android:name=".ForgotPassword"></activity>
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".MainPageActivity" />
+        <activity
+            android:name=".ConversationActivity"
+            android:label="@string/title_activity_conversation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QuizActivity"
+            android:label="@string/title_activity_quiz"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GrammarActivity"
+            android:label="@string/title_activity_grammar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DictionaryActivity"
+            android:label="@string/title_activity_dictionary"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GREWordsActivity"
+            android:label="@string/title_activity_grewords"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DailyPhrasesActivity"
+            android:label="@string/title_activity_daily_phrases"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PronunciationActivity"
+            android:label="@string/title_activity_pronunciation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DiscussionForumActivity"
+            android:label="@string/title_activity_discussion_forum"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
