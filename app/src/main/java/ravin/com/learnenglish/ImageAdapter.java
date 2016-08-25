@@ -49,7 +49,7 @@ public class ImageAdapter extends BaseAdapter {
     public Integer[] mThumbIds = {
             R.drawable.conversation, R.drawable.quizzes,
             R.drawable.dictionary, R.drawable.grammar,
-            R.drawable.discussionforum, R.drawable.dailyphrases,
+            R.drawable.discussion_forum, R.drawable.dailyphrases,
             R.drawable.pronunciation
     };
 }
