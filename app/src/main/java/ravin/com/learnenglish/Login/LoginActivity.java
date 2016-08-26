@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
@@ -156,9 +157,38 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    //loginButtonAction Start
+    public void onClickLogin(View view){
+
+        if (this.inputValidation()){
+            // TODo Make webservice call input validation
+            this.presntHomeScreen();
+        }
+
+    }
+
+    private boolean inputValidation(){
+        View view = findViewById(R.id.Login_View);
+        EditText emailIdTextFiled =  (EditText) view.findViewById(R.id.Login_EmailTextFiled);
+
+       if (emailIdTextFiled.getText().toString().trim().isEmpty()){
+           Toast.makeText(this, "Email id can not be empty", Toast.LENGTH_SHORT).show();
+           return false;
+        }
+        EditText passwordTextField =  (EditText) view.findViewById(R.id.Login_PasswordTextFiled);
+        if(passwordTextField.getText().toString().toString().trim().isEmpty()){
+           Toast.makeText(this,"Password can not be empty",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+        return true;
+    }
+
+    //loginButtonAction Start
+
     // OnSignupClick method Start
 
-    public void onSignupClick(View view){
+    public void onClickSignUp(View view){
         Intent main = new Intent(LoginActivity.this, ravin.com.learnenglish.Signup.SignupActivity.class);
         startActivity(main);
     }
@@ -175,8 +205,12 @@ public class LoginActivity extends AppCompatActivity {
     // onClickForgotPassword method end
 
     public void onClickSkip(View view){
+        this.presntHomeScreen();
+    }
 
-        Intent intent1 = new Intent(LoginActivity.this,ravin.com.learnenglish.Home.MainPageActivity.class);
-        startActivity(intent1);
+    //Presenting Home screen
+    private void presntHomeScreen(){
+        Intent homeIntent = new Intent(LoginActivity.this,ravin.com.learnenglish.Home.MainPageActivity.class);
+        startActivity(homeIntent);
     }
 }
