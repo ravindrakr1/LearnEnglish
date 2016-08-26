@@ -1,13 +1,15 @@
-package ravin.com.learnenglish;
+package ravin.com.learnenglish.Signup;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import ravin.com.learnenglish.R;
 
-public class ForgotPassword extends AppCompatActivity {
+
+public class SignupActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forgot_password);
+        setContentView(R.layout.activity_signup);
     }
 }

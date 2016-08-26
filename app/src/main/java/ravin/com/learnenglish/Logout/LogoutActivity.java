@@ -1,4 +1,9 @@
-package ravin.com.learnenglish;
+package ravin.com.learnenglish.Logout;
+
+
+/**
+ * Created by mayankg on 26/08/16.
+ */
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +20,12 @@ import com.facebook.login.LoginManager;
 import com.facebook.share.model.ShareLinkContent;
 import com.facebook.share.widget.ShareDialog;
 
-public class Main2Activity extends AppCompatActivity {
+import ravin.com.learnenglish.R;
+
+
+
+
+public class LogoutActivity extends AppCompatActivity {
 
     private ShareDialog mShareDialog;
 
@@ -35,7 +45,7 @@ public class Main2Activity extends AppCompatActivity {
         nameView.setText(""+name+" "+surname);
 
         mShareDialog = new ShareDialog(this);
-        new DownloadImage((ImageView) findViewById(R.id.profileImage)).execute(imageUrl);
+        new ravin.com.learnenglish.Utility.DownloadImage((ImageView) findViewById(R.id.profileImage)).execute(imageUrl);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -72,7 +82,7 @@ public class Main2Activity extends AppCompatActivity {
 
     public void logout(){
         LoginManager.getInstance().logOut();
-        Intent login = new Intent(Main2Activity.this, MainActivity.class);
+        Intent login = new Intent(LogoutActivity.this, ravin.com.learnenglish.Login.LoginActivity.class);
 
         startActivity(login);
         finish();

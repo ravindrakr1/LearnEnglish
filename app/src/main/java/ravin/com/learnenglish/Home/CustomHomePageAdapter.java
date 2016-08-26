@@ -1,4 +1,4 @@
-package ravin.com.learnenglish;
+package ravin.com.learnenglish.Home;
 
 /**
  * Created by mayankg on 25/08/16.
@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 import android.content.Intent;
-
+import ravin.com.learnenglish.R;
 
 public class CustomHomePageAdapter extends BaseAdapter {
 
@@ -86,31 +86,31 @@ public class CustomHomePageAdapter extends BaseAdapter {
                 switch (position) {
 
                     case 0:
-                        intent = new Intent(mainActivity, ConversationActivity.class);
+                        intent = new Intent(mainActivity, ravin.com.learnenglish.Conversation.ConversationActivity.class);
                         mainActivity.startActivity(intent);
                         break;
                     case 1:
-                        intent = new Intent(mainActivity, QuizActivity.class);
+                        intent = new Intent(mainActivity,ravin.com.learnenglish.Quiz.QuizActivity.class);
                         mainActivity.startActivity(intent);
                         break;
                     case 2:
-                        intent = new Intent(mainActivity, DictionaryActivity.class);
+                        intent = new Intent(mainActivity, ravin.com.learnenglish.Dictionary.DictionaryActivity.class);
                         mainActivity.startActivity(intent);
                         break;
                     case 3:
-                        intent = new Intent(mainActivity, GrammarActivity.class);
+                        intent = new Intent(mainActivity, ravin.com.learnenglish.Grammar.GrammarActivity.class);
                         mainActivity.startActivity(intent);
                         break;
                     case 4:
-                        intent = new Intent(mainActivity, DiscussionForumActivity.class);
+                        intent = new Intent(mainActivity, ravin.com.learnenglish.DiscussionForum.DiscussionForumActivity.class);
                         mainActivity.startActivity(intent);
                         break;
                     case 5:
-                        intent = new Intent(mainActivity, DailyPhrasesActivity.class);
+                        intent = new Intent(mainActivity, ravin.com.learnenglish.DailyPhrases.DailyPhrasesActivity.class);
                         mainActivity.startActivity(intent);
                         break;
                     case 6:
-                        intent = new Intent(mainActivity, PronunciationActivity.class);
+                        intent = new Intent(mainActivity, ravin.com.learnenglish.Pronunciation.PronunciationActivity.class);
                         mainActivity.startActivity(intent);
                         break;
                     default:

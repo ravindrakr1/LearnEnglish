@@ -1,10 +1,11 @@
-package ravin.com.learnenglish;
+package ravin.com.learnenglish.Home;
 
 import android.content.Context;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.GridView;
+import ravin.com.learnenglish.R;
 
 
 
@@ -24,7 +25,6 @@ public class MainPageActivity extends AppCompatActivity {
         this.gridView.setHorizontalSpacing(5);
         String [] NameList = {"Conversation","Quiz","Dictionary","Grammar","Discussion Forum","Daily Phrases","Pronunciation"}; // title Array
         String[]  ImagesList = {"\uf001","\uf002","\uf003","\uf004","\uf005","\uf006","\uf007"}; // BackGround image array
-        this.gridView.setAdapter(new CustomHomePageAdapter(this, NameList, ImagesList));
-
+        this.gridView.setAdapter(new ravin.com.learnenglish.Home.CustomHomePageAdapter(this, NameList, ImagesList));
     }
 }

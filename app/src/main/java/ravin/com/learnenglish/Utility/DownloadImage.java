@@ -1,4 +1,4 @@
-package ravin.com.learnenglish;
+package ravin.com.learnenglish.Utility;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
