@@ -32,7 +32,7 @@ public class MainPageActivity extends AppCompatActivity {
     protected ArrayList<GridViewInfo> getGridViewInfo(){
         ArrayList<GridViewInfo> gridInfo = new ArrayList<GridViewInfo>();
         final String [] nameList = {"Conversation","Quiz","Dictionary","Grammar","Discussion Forum","Daily Phrases","Pronunciation"}; // title Array
-        final String[]  imagesList = {"\uf001","\uf002","\uf003","\uf004","\uf005","\uf006","\uf007"}; // BackGround image array
+        final String[]  imagesList = {"\uf001","\uf29c","\uf02d","\uf004","\uf005","\uf006","\uf007"}; // BackGround image array
         final Integer gridCount = nameList.length;
         for (Integer i = 0; i < gridCount; ++i ){
             GridViewInfo grid = new GridViewInfo(nameList[i],imagesList[i]);
@@ -41,4 +41,5 @@ public class MainPageActivity extends AppCompatActivity {
         }
         return gridInfo;
     }
+
 }

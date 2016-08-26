@@ -10,25 +10,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="ravin.com.learnenglish.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+    android:id="@+id/Login_View">
 
 
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/Login_EmailTextFiled"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
+        android:inputType = "textEmailAddress"
         android:hint ="@string/login_email"
         android:ems="10"
         />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/Login_PasswordTextFiled"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
+        android:layout_below="@+id/Login_EmailTextFiled"
         android:layout_centerInParent="true"
         android:inputType="textPassword"
         android:hint="@string/login_password"
@@ -36,23 +38,24 @@
         />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/Login_PasswordTextFiled"
         android:text="@string/login_button"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="50dp"
+        android:onClick="onClickLogin"
         />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/signupButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:layout_toRightOf="@+id/button1"
+        android:layout_below="@+id/Login_PasswordTextFiled"
+        android:layout_toRightOf="@+id/loginButton"
         android:text="@string/signup_button"
-        android:onClick="onSignupClick"
+        android:onClick="onClickSignUp"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="30dp"
         />
@@ -65,7 +68,7 @@
         android:textColor="#000000"
         android:layout_marginTop="20dp"
         android:layout_centerInParent="true"
-        android:layout_below="@+id/button1"
+        android:layout_below="@+id/loginButton"
         android:text="Forgot Password?"
         android:textStyle="bold"
         android:clickable="true"
@@ -78,7 +81,7 @@
         android:id="@+id/login_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
+        android:layout_below="@+id/loginButton"
         android:layout_marginTop="60dp"/>
 
     <Button
