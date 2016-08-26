@@ -1,4 +1,4 @@
-package ravin.com.learnenglish;
+package ravin.com.learnenglish.Conversation;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -12,14 +12,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import ravin.com.learnenglish.R;
 
-public class QuizActivity extends AppCompatActivity
+public class ConversationActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
+        setContentView(R.layout.activity_conversation);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -55,7 +56,7 @@ public class QuizActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.quiz, menu);
+        getMenuInflater().inflate(R.menu.conversation, menu);
         return true;
     }
 

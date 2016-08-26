@@ -1,4 +1,8 @@
-package ravin.com.learnenglish;
+package ravin.com.learnenglish.Login;
+
+/**
+ * Created by mayankg on 26/08/16.
+ */
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +24,11 @@ import com.facebook.ProfileTracker;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
-public class MainActivity extends AppCompatActivity {
+import ravin.com.learnenglish.R;
+
+
+
+public class LoginActivity extends AppCompatActivity {
 
     private CallbackManager callbackManager;
     private AccessTokenTracker accessTokenTracker;
@@ -140,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
     private void nextActivity(Profile profile){
         if(profile != null)
         {
-            Intent main = new Intent(MainActivity.this, Main2Activity.class);
+            Intent main = new Intent(LoginActivity.this, ravin.com.learnenglish.Logout.LogoutActivity.class);
             main.putExtra("name", profile.getFirstName());
             main.putExtra("surname", profile.getLastName());
             main.putExtra("imageUrl", profile.getProfilePictureUri(200,200).toString());
@@ -151,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
     // OnSignupClick method Start
 
     public void onSignupClick(View view){
-        Intent main = new Intent(MainActivity.this, SignupActivity.class);
+        Intent main = new Intent(LoginActivity.this, ravin.com.learnenglish.Signup.SignupActivity.class);
         startActivity(main);
     }
 
@@ -160,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
     // onClickForgotPassword method Start
 
     public void onClickForgotPassword(View view){
-        Intent main = new Intent(MainActivity.this, ForgotPassword.class);
+        Intent main = new Intent(LoginActivity.this, ravin.com.learnenglish.ForgotPassword.ForgotPasswordActivity.class);
         startActivity(main);
     }
 
@@ -168,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickSkip(View view){
 
-        Intent intent1 = new Intent(MainActivity.this,MainPageActivity.class);
+        Intent intent1 = new Intent(LoginActivity.this,ravin.com.learnenglish.Home.MainPageActivity.class);
         startActivity(intent1);
     }
 }

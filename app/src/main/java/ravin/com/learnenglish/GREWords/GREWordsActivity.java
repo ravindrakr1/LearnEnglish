@@ -1,4 +1,4 @@
-package ravin.com.learnenglish;
+package ravin.com.learnenglish.GREWords;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import ravin.com.learnenglish.R;
 
 public class GREWordsActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

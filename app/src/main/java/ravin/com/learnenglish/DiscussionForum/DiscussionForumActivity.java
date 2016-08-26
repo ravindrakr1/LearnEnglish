@@ -1,4 +1,4 @@
-package ravin.com.learnenglish;
+package ravin.com.learnenglish.DiscussionForum;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -12,14 +12,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import ravin.com.learnenglish.R;
 
-public class DailyPhrasesActivity extends AppCompatActivity
+public class DiscussionForumActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_daily_phrases);
+        setContentView(R.layout.activity_discussion_forum);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -55,7 +56,7 @@ public class DailyPhrasesActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.daily_phrases, menu);
+        getMenuInflater().inflate(R.menu.discussion_forum, menu);
         return true;
     }
 

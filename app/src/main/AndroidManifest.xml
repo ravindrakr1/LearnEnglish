@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".Login.LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Main2Activity"
+            android:name=".Logout.LogoutActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
 
@@ -39,39 +39,39 @@
             android:authorities="com.facebook.app.FacebookContentProvider"
             android:exported="true" />
 
-        <activity android:name=".SignupActivity" />
-        <activity android:name=".ForgotPassword" />
-        <activity android:name=".MainPageActivity" />
+        <activity android:name=".Signup.SignupActivity" />
+        <activity android:name=".ForgotPassword.ForgotPasswordActivity" />
+        <activity android:name=".Home.MainPageActivity" />
         <activity
-            android:name=".ConversationActivity"
+            android:name=".Conversation.ConversationActivity"
             android:label="@string/title_activity_conversation"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".QuizActivity"
+            android:name=".Quiz.QuizActivity"
             android:label="@string/title_activity_quiz"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".GrammarActivity"
+            android:name=".Grammar.GrammarActivity"
             android:label="@string/title_activity_grammar"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".DictionaryActivity"
+            android:name=".Dictionary.DictionaryActivity"
             android:label="@string/title_activity_dictionary"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".GREWordsActivity"
+            android:name=".GREWords.GREWordsActivity"
             android:label="@string/title_activity_grewords"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".DailyPhrasesActivity"
+            android:name=".DailyPhrases.DailyPhrasesActivity"
             android:label="@string/title_activity_daily_phrases"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".PronunciationActivity"
+            android:name=".Pronunciation.PronunciationActivity"
             android:label="@string/title_activity_pronunciation"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".DiscussionForumActivity"
+            android:name=".DiscussionForum.DiscussionForumActivity"
             android:label="@string/title_activity_discussion_forum"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
