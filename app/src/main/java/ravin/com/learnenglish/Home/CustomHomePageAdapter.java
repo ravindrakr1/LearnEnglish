@@ -14,21 +14,21 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 import android.content.Intent;
+
+import java.util.ArrayList;
+
 import ravin.com.learnenglish.R;
 
 public class CustomHomePageAdapter extends BaseAdapter {
-
-    private String [] listName;
     private Context context;
-    private String [] imageId;
     private MainPageActivity mainActivity;
     private static LayoutInflater inflater=null;
+    private ArrayList<GridViewInfo> gridInfo;
 
     // Constructor
-    public CustomHomePageAdapter(MainPageActivity mainActivity, String[] prgmNameList, String[] prgmImages) {
-        this.listName = prgmNameList;
+    public CustomHomePageAdapter(MainPageActivity mainActivity, ArrayList<GridViewInfo> gridInfo) {
         this.context = mainActivity;
-        this.imageId = prgmImages;
+        this.gridInfo = gridInfo;
         this.mainActivity = mainActivity;
         inflater = ( LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
@@ -36,8 +36,7 @@ public class CustomHomePageAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        // TODO Auto-generated method stub
-        return this.listName.length;
+        return this.gridInfo.size();
     }
 
     @Override
@@ -67,11 +66,11 @@ public class CustomHomePageAdapter extends BaseAdapter {
 
         rowView = inflater.inflate(R.layout.activity_home_list, null);
         holder.itemType = (TextView) rowView.findViewById(R.id.textView1);
-        holder.itemType.setText(listName[position]);
+        holder.itemType.setText(this.gridInfo.get(position).getTitile());
         holder.itemType.setGravity(Gravity.CENTER);
 
         holder.itemIcon = (TextView) rowView.findViewById(R.id.imageView1);
-        holder.itemIcon.setText(this.imageId[position]); // setting text
+        holder.itemIcon.setText(this.gridInfo.get(position).getImageCode()); // setting text
         holder.itemIcon.setTypeface(mainActivity.fontAwesomeFont);
 
 
